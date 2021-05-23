@@ -22,6 +22,10 @@ app.use('/', (req, res, next) => {
   res.json({ message: 'Hello Coder' });
 });
 
+app.get('/', (req, res) => {
+  console.log('Getting Response from the server');
+});
+
 app.listen(port, () => {
   console.log(`Server running on PORT: ${port}`);
 });
